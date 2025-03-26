@@ -1,0 +1,15 @@
+defaults:
+  - agent: xsac
+  - feature_extractor: deepset
+  - problem: racing
+  - override hydra/job_logging: none
+  - override hydra/hydra_logging: none
+  - _self_
+
+agent:
+  kappa: 1e-3
+  lr: 1e-4
+  q_lr: null
+feature_extractor:
+  set_ffn: 30.
+steps: 1000000

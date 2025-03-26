@@ -1,0 +1,12 @@
+type: dsac
+alpha: .015
+target_entropy: null
+lr: 1e-4
+tau: 5e-3
+gamma: .95
+batch_size: 256
+buffer_size: 1000000
+clip_norm: null
+net_width: 256
+net_depth: 2
+duelling: true

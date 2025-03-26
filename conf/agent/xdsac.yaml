@@ -1,0 +1,16 @@
+type: xdsac
+alpha: .015
+target_entropy: null
+tau: 5e-3
+lr: 3e-4
+q_lr: null
+gamma: .95
+batch_size: 256
+buffer_size: 1000000
+actor_width: 256
+actor_depth: 3
+critic_width: 256
+critic_depth: 2
+uniform_mixture: false
+kappa: .001
+clip_norm: null

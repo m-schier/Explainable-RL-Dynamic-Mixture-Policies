@@ -1,0 +1,16 @@
+defaults:
+  - agent: xsac
+  - feature_extractor: tracking_flat
+  - problem: racing_tracking
+  - override hydra/job_logging: none
+  - override hydra/hydra_logging: none
+  - _self_
+
+agent:
+  kappa: 1e-3
+  actor_depth: 3
+  critic_depth: 3
+feature_extractor:
+  pe_freqs: 4
+  pe_orig: true
+steps: 1000000

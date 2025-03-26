@@ -1,0 +1,4 @@
+type: racing_tracking
+reduced_actions: false
+lookahead_points: 25
+step: 2.0

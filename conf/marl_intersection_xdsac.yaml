@@ -1,0 +1,21 @@
+defaults:
+  - agent: xdsac
+  - feature_extractor: deepset
+  - problem: marl_intersection
+  - override hydra/job_logging: none
+  - override hydra/hydra_logging: none
+  - _self_
+
+agent:
+  actor_depth: 3
+  alpha: 0.015
+  batch_size: 512
+  buffer_size: 15000000
+  clip_norm: 10.
+  kappa: 1e-3
+feature_extractor:
+  width: 256
+problem:
+  soft_collisions: true
+steps: 5000000
+reset_steps: 500001

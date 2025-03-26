@@ -1,0 +1,15 @@
+defaults:
+  - agent: dsac
+  - feature_extractor: deepset
+  - problem: racing
+  - override hydra/job_logging: none
+  - override hydra/hydra_logging: none
+  - _self_
+
+agent:
+  alpha: auto
+  lr: 1e-4
+  target_entropy: 1.24
+feature_extractor:
+  set_ffn: 30.
+steps: 1000000

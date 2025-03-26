@@ -1,0 +1,13 @@
+defaults:
+  - agent: xdsac
+  - feature_extractor: deepset
+  - problem: racing
+  - override hydra/job_logging: none
+  - override hydra/hydra_logging: none
+  - _self_
+
+steps: 1000000
+
+hydra:
+  run:
+    dir: tmp/outputs/${hydra.job.name}/${now:%Y-%m-%d_%H-%M-%S}
